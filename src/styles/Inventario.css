@@ -1,0 +1,109 @@
+.inv {
+  min-height: 100vh;
+  background-color: #0d1b2a;
+  padding: 2.5rem;
+  font-family: sans-serif;
+}
+
+/* ── Encabezado ── */
+.inv__header {
+  margin-bottom: 2rem;
+  border-left: 4px solid #c8a84b;
+  padding-left: 1rem;
+}
+
+.inv__titulo {
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: Georgia, serif;
+  margin: 0;
+}
+
+.inv__subtitulo {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  margin: 0.25rem 0 0;
+}
+
+/* ── Wrapper con scroll horizontal en móvil ── */
+.inv__tabla-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ── Tabla ── */
+.inv__tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.inv__tabla thead {
+  background-color: #1e3a5f;
+}
+
+.inv__tabla th {
+  padding: 0.875rem 1rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  white-space: nowrap;
+}
+
+.inv__tabla td {
+  padding: 0.875rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  vertical-align: middle;
+}
+
+.inv__tabla tbody tr {
+  background-color: #0d1b2a;
+  transition: background-color 0.15s;
+}
+
+.inv__tabla tbody tr:hover {
+  background-color: #132537;
+}
+
+/* ── Celdas especiales ── */
+.inv__id {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: #c8a84b;
+}
+
+.inv__nombre {
+  font-weight: 500;
+  color: white;
+}
+
+.inv__cantidad {
+  text-align: center;
+  font-weight: 600;
+}
+
+.inv__libre {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ── Tags / badges ── */
+.inv__tag {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.inv__tag--alto    { background-color: rgba(34, 197, 94, 0.15);  color: #4ade80; }
+.inv__tag--bajo    { background-color: rgba(239, 68, 68, 0.15);  color: #f87171; }
+.inv__tag--bueno   { background-color: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+.inv__tag--regular { background-color: rgba(234, 179, 8, 0.15);  color: #facc15; }
+.inv__tag--malo    { background-color: rgba(239, 68, 68, 0.15);  color: #f87171; }
