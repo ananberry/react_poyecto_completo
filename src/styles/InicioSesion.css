@@ -1,0 +1,172 @@
+.auth-page {
+  min-height: 100vh;
+
+  /* Fondo espacial */
+  background-image:
+    linear-gradient(rgba(5, 10, 25, 0.75),
+    rgba(5, 10, 25, 0.85)),
+    url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Times New Roman', serif;
+  padding: 20px;
+}
+
+/* Tarjeta del login */
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 45px;
+
+  border-radius: 20px;
+
+  background: rgba(10, 20, 45, 0.55);
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    0 0 30px rgba(0,0,0,0.5),
+    0 0 15px rgba(232, 168, 56, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Logo */
+.auth-logo-text {
+  color: #E8A838;
+
+  font-size: 1.2rem;
+
+  font-weight: bold;
+
+  letter-spacing: 4px;
+
+  line-height: 1.5;
+
+  text-align: center;
+
+  margin: 0;
+}
+
+/* Título */
+.auth-title {
+  color: white;
+
+  font-size: 2rem;
+
+  font-weight: 400;
+
+  text-align: center;
+
+  margin: 0;
+
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid rgba(232, 168, 56, 0.3);
+}
+
+/* Inputs */
+.auth-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.auth-field label {
+  color: #d9dff5;
+
+  font-size: 0.95rem;
+
+  letter-spacing: 1px;
+}
+
+.auth-field input {
+  padding: 14px 16px;
+
+  border-radius: 10px;
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  background: rgba(255,255,255,0.08);
+
+  color: white;
+
+  font-size: 1rem;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.auth-field input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.auth-field input:focus {
+  border-color: #E8A838;
+
+  box-shadow: 0 0 10px rgba(232,168,56,0.4);
+}
+
+/* Botón */
+.auth-button {
+  background: linear-gradient(
+    135deg,
+    #E8A838,
+    #c98a22
+  );
+
+  color: #08111f;
+
+  border: none;
+
+  border-radius: 50px;
+
+  padding: 14px;
+
+  font-size: 1rem;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.auth-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 0 15px rgba(232,168,56,0.5);
+}
+
+/* Texto inferior */
+.auth-link {
+  text-align: center;
+
+  color: #c9d1f0;
+
+  font-size: 0.9rem;
+}
+
+.auth-link a {
+  color: #E8A838;
+
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}

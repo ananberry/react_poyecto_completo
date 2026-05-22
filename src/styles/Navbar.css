@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR GENERAL */
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #233f73;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* LOGO */
+.navbar-logo {
+    position: absolute;
+    left: 40px;
+
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* MENÚ */
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+
+    list-style: none;
+}
+
+/* LINKS */
+.navbar-item a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+/* HOVER */
+.navbar-item a:hover {
+    color: #d4af37;
+}
+
+/* BOTÓN PERFIL */
+.profile-btn {
+    border: 2px solid white;
+    padding: 8px 18px;
+    border-radius: 30px;
+}
+
