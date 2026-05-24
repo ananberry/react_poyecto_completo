@@ -1,0 +1,62 @@
+.notificaciones-container{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0b1026;
+}
+
+.notificaciones-card{
+
+    width: 70%;
+    max-width: 900px;
+
+    background-color: #1c2143;
+
+    padding: 60px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    color: white;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.notificaciones-titulo{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.notificaciones-texto{
+    font-size: 24px;
+    line-height: 1.6;
+
+    margin-bottom: 40px;
+}
+
+.notificaciones-boton{
+
+    padding: 15px 35px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #e1b126;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.notificaciones-boton:hover{
+    transform: scale(1.05);
+}
