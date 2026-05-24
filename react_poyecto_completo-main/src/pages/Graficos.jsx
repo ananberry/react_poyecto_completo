@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 import Navbar from "../components/Navbar";
-
 import "../styles/Historial.css";
 import "../styles/Navbar.css";
 
@@ -34,6 +33,11 @@ return (
         alt="frecuencia"
         style={{ width: "80%" }}
     />
+
+
+
+
+
 
     <h2>📊 Gráfico de Estados</h2>
     <img
