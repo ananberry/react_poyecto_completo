@@ -7,6 +7,11 @@
 
 /* ── Encabezado ── */
 .inv__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin-bottom: 2rem;
   border-left: 4px solid #c8a84b;
   padding-left: 1rem;
@@ -107,3 +112,180 @@
 .inv__tag--bueno   { background-color: rgba(59, 130, 246, 0.15); color: #60a5fa; }
 .inv__tag--regular { background-color: rgba(234, 179, 8, 0.15);  color: #facc15; }
 .inv__tag--malo    { background-color: rgba(239, 68, 68, 0.15);  color: #f87171; }
+
+/* ── Botones generales ── */
+
+.inv__btn {
+  padding: 0.6rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.inv__btn--primary {
+  background: linear-gradient(135deg, #c8a84b, #a07832);
+  color: #0d1b2a;
+}
+
+.inv__btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(200, 168, 75, 0.4);
+}
+
+.inv__btn--primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.inv__btn--secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.inv__btn--secondary:hover {
+  background: rgba(255, 255, 255, 0.13);
+}
+
+/* ── Estado: cargando ── */
+.inv__estado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.inv__spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid rgba(200, 168, 75, 0.2);
+  border-top-color: #c8a84b;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Estado: error ── */
+.inv__error {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  color: #f87171;
+  font-size: 0.9rem;
+}
+
+/* ── Celda vacía ── */
+.inv__vacio {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  padding: 2.5rem !important;
+  font-style: italic;
+}
+
+/* ── Overlay del formulario ── */
+.inv__form-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.inv__form {
+  background: #0d2340;
+  border: 1px solid rgba(200, 168, 75, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.inv__form-titulo {
+  color: #c8a84b;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: Georgia, serif;
+  margin: 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(200, 168, 75, 0.2);
+}
+
+.inv__form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.inv__form-field label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+}
+
+.inv__form-field input,
+.inv__form-field select {
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.inv__form-field input:focus,
+.inv__form-field select:focus {
+  border-color: #c8a84b;
+  box-shadow: 0 0 8px rgba(200, 168, 75, 0.3);
+}
+
+.inv__form-field select option {
+  background: #0d2340;
+}
+
+.inv__opcional {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.35);
+  font-style: italic;
+}
+
+.inv__form-error {
+  color: #f87171;
+  font-size: 0.82rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  margin: 0;
+}
+
+.inv__form-botones {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.inv__form-botones .inv__btn {
+  flex: 1;
+}

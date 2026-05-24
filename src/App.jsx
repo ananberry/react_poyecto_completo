@@ -8,6 +8,10 @@ import Registro from "./pages/Registro";
 import Historial from "./pages/Historial";
 import Inventario from "./pages/Inventario";
 import Notificaciones from "./pages/Notificaciones";
+import AccesoDenegado from "./pages/AccesoDenegado";
+
+// Componente de ruta protegida
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
 
@@ -30,7 +34,7 @@ function App() {
 
         <Route
           path="/historial"
-          element={<Historial />}
+          element={<ProtectedRoute element={<Historial />} requiredRole="PROFESOR" />}
         />
 
         <Route
@@ -41,6 +45,11 @@ function App() {
         <Route
           path="/notificaciones"
           element={<Notificaciones />}
+        />
+
+        <Route
+          path="/acceso-denegado"
+          element={<AccesoDenegado />}
         />
 
       </Routes>
