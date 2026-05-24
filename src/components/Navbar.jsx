@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import "../styles/Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -24,11 +25,31 @@ const Navbar = () => {
     <nav className="navbar">
       {/* Logo */}
       <Link to="/" className="navbar-logo">
+=======
+import React from 'react';
+import "../styles/Navbar.css";
+import { Link } from "react-router-dom";
+
+const Navbar = () => {
+  return (
+
+    <nav className="navbar">
+
+      {/* Logo */}
+      <Link
+        to="/"
+        className="navbar-logo"
+      >
+>>>>>>> be7c2328874972e95f7a54921ad4a53ca31fad9c
         NMS
       </Link>
 
       {/* Menú */}
       <ul className="navbar-menu">
+<<<<<<< HEAD
+=======
+
+>>>>>>> be7c2328874972e95f7a54921ad4a53ca31fad9c
         <li className="navbar-item">
           <Link to="/inventario">
             Inventario
@@ -47,6 +68,7 @@ const Navbar = () => {
           </Link>
         </li>
 
+<<<<<<< HEAD
         {usuario ? (
           <>
             <li className="navbar-item navbar-user-info" style={{ color: "#fff", display: "flex", alignItems: "center", gap: "8px" }}>
@@ -83,7 +105,29 @@ const Navbar = () => {
         )}
       </ul>
     </nav>
+=======
+        <li className="navbar-item">
+          <Link to="/inicio-sesion">
+            Inicio Sesión
+          </Link>
+        </li>
+
+      </ul>
+
+    </nav>
+
+>>>>>>> be7c2328874972e95f7a54921ad4a53ca31fad9c
   );
 };
 
 export default Navbar;
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+>>>>>>> be7c2328874972e95f7a54921ad4a53ca31fad9c
