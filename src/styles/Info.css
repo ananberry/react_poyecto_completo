@@ -1,0 +1,82 @@
+.tarjeta {
+    background-color: #1c2143;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    /* Centra todo verticalmente */
+    justify-content: space-around;
+    /* Deja espacio entre los grupos */
+    padding: 50px;
+    color: white;
+align-items: flex-start;
+}
+
+
+
+.contenido {
+    position: relative;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+    max-width:500px;
+    margin-left: auto;
+    margin-right: 30px;
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 70px;
+}
+
+.boton {
+
+    position: relative;
+    padding: 10px 20px;
+    background-color: #e1b126;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-left: 100px;
+}
+
+
+.contenedor2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    min-height: 100px;
+    padding: 60px;
+    margin-top: 40px;
+}
+
+
+.logo {
+
+    display: flex;
+    top: 10px;
+    left: 20px;
+    width: 150px;
+
+}
+
+
+.contenedor1 {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Espacio entre el logo y el texto blanco */
+}
+
+
+.titulo{
+font-family: 'Times New Roman', Times, serif;
+font-size: 30px;
+line-height: 0.9;
+text-transform: uppercase;
+}
+
